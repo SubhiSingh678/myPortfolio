@@ -1,0 +1,699 @@
+/* Resetting some default margins and paddings */
+/* Global Background Image for All Pages */
+body {
+    background-image: url('health.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the whole page */
+    background-position: center center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    min-height: 100vh; /* Ensures it takes at least the full height of the screen */
+    color: #ffffff; /* Changes text color for contrast */
+    background-attachment: fixed; /* Keeps the background fixed */
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+header {
+    background-color: #ffffff; /* White background for header */
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between; /* Space between the logo and the nav items */
+    align-items: center; /* Vertically center the logo and nav items */
+}
+
+header .logo {
+    color: #0e5e12; /* Logo font color in blue */
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #0e5e12; /* Font color for nav links */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #4CAF50; /* Hover color for nav links */
+}
+
+nav ul li a.cta-button {
+    background-color: #4CAF50;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+}
+
+/* Main Section */
+.main {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+/* Subtle Gradient Overlay */
+.main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background: rgba(0, 0, 0, 0.4); /* Darker overlay */
+    z-index: 1;
+}
+
+.main-content {
+    max-width: 800px;
+    padding: 20px;
+    z-index: 2; /* Ensures text stays on top */
+    animation: fadeIn 2s ease-in-out;
+}
+
+.main h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.main p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.sub-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.sub-button:hover {
+    background-color: #45a049;
+    transform: scale(1.1); /* Subtle scale on hover */
+}
+
+/* Hover Effect for Titles */
+.intro h1:hover, .mission h2:hover {
+    color: #4CAF50; /* Change color on hover */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+/* About Us Section Styles */
+.about {
+    margin-top: 40px;
+    padding: 80px 40px; /* Increased padding for more space */
+    text-align: center; /* Center the content */
+    max-width: 900px; /* Allow more space for content */
+    margin-left: auto;
+    margin-right: auto;
+    color: white; /* Set font color to white */
+}
+
+/* Introduction */
+.intro {
+    margin-bottom: 30px; /* Increased bottom margin for more spacing */
+}
+
+.intro h1 {
+    font-size: 3rem; /* Increased font size */
+    margin-bottom: 30px; /* Increased bottom margin */
+    color: white;
+}
+
+.intro p {
+    font-size: 1.4rem; /* Increased font size */
+    line-height: 1.8; /* More line spacing */
+    color: white;
+    max-width: 800px; /* Increased max-width for better readability */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Mission Statement */
+.mission {
+    margin-bottom: 60px; /* Increased margin for better spacing */
+}
+
+.mission h2 {
+    font-size: 2.5rem; /* Larger font size for mission statement */
+    color: white;
+    margin-bottom: 30px;
+}
+
+.mission p {
+    font-size: 1.4rem; /* Increased font size */
+    line-height: 1.8; /* More line spacing */
+    color: white;
+    max-width: 800px; /* Increased max-width for readability */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Book a Session Section */
+.book-session {
+    padding: 30px;
+    margin-top: 60px; /* Increased margin for spacing */
+    background-color: #f4f4f4; /* Keep background color for the button area */
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.book-session h2 {
+    font-size: 2.5rem; /* Increased font size */
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+.book-session p {
+    font-size: 1.3rem; /* Increased font size */
+    line-height: 1.8; /* More line spacing */
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+}
+
+.book-session .sub-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book-session .sub-button:hover {
+    background-color: #45a049;
+}
+
+/* Services Section */
+.main-services {
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    color: white;
+}
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 80px 20px;
+    color: #333;
+    padding: 40px 20px;
+    flex-grow: 1; /* Allows the services section to take available space */
+}
+
+/* Card Style */
+.card {
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* Card Image */
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Card Title */
+.card h3 {
+    font-size: 1.4rem;
+    margin: 15px 0;
+    color: #333;
+}
+
+/* Card Short Description */
+.card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Price Range */
+.price-range {
+    font-size: 1.1rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Details Section */
+details {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+summary {
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #4CAF50;
+}
+
+summary:hover {
+    text-decoration: underline;
+}
+
+details p {
+    font-size: 0.95rem;
+    margin-top: 10px;
+    color: #555;
+    line-height: 1.5;
+}
+/* Blog Section Styling */
+.blog {
+    margin-top: 40px;
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white; /* Set text color to white for contrast */
+}
+
+.blog h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.blog p {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* Blog Post Styling */
+.blog-post {
+    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.blog-post h2 {
+    font-size: 2rem;
+    color: #ffffff; /* Accent color */
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: white;
+}
+
+/* Read More Button */
+.read-more {
+    display: inline-block;
+    font-size: 1.1rem;
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #45a049;
+}
+
+/* More Content Styles */
+.more-content {
+    display: none;
+    margin-top: 20px;
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Display more content when checkbox is checked */
+.read-toggle:checked + .read-more + .more-content {
+    display: block;
+}
+
+/* Upcoming Events Section */
+.events {
+    padding: 3rem 2rem;
+    background-color: rgba(240, 240, 240, 0.95);
+    padding: 80px 20px;
+    color: #333;
+    text-align: center;
+    margin-top: 5rem; /* Added margin-top to prevent overlap with header */
+}
+
+.events h1 {
+    font-size: 2.5rem;
+    color: #f0e6e6;
+    margin-bottom: 2rem;
+}
+
+/* Event Card Styles */
+.event-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 700px; /* Increased the width of the cards */
+    width: 90%; /* Ensures the cards take up more of the page */
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h2 {
+    font-size: 2rem;
+    color: #0077b6;
+    margin-bottom: 1rem;
+}
+
+.date {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.description {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.sub-button {
+    background-color: #0077b6;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.sub-button:hover {
+    background-color: #005f8d;
+}
+
+/* Team Section */
+.team-intro {
+    text-align: center;
+    margin-top: 50px;
+    padding:20px;
+}
+
+.team-intro h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.team-intro p {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+/* Team Members */
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding:20px;
+    
+    flex-grow: 1; /* Makes sure the team section takes up remaining space */
+}
+
+.team-member {
+    background-color: #fff;
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Contact Form Section */
+.contact {
+
+    max-width: 600px;
+    margin: 3rem auto; /* Increase margin at the top to push the form lower */
+    padding: 2.5rem; /* Padding inside the form */
+    color: black;
+    background-color: #f4f4f4;
+    border: 2px solid #ddd; /* Solid border around the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    color: #333;
+}
+
+/* Contact Title */
+.contact h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Contact Subtitle */
+.contact p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Form Input Fields */
+label {
+    font-weight: bold;
+    margin-top: 1.5rem;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1rem; /* Add more comfortable padding */
+    margin: 0.8rem 0; /* More space between fields */
+    border: 1px solid #ddd; /* Border for input fields */
+    border-radius: 4px; /* Rounded edges for inputs */
+    box-sizing: border-box; /* Ensures padding doesn't affect the width */
+    font-size: 1rem;
+}
+
+/* Submit Button */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1.2rem 2.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .team-intro h1 {
+        font-size: 2rem;
+    }
+
+    .team-intro p {
+        font-size: 1rem;
+    }
+}
+
+
+/* Footer Section */
+footer {
+    /*background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for footer */
+    color: #ffffff; /* Font color in blue */
+    text-align: center;
+    padding: 20px;
+}
+
+/* main section Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Sticky header shadow effect */
+header.sticky {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease;
+}
+
+/* JS-Triggered Fade-In */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Button Click Animation */
+.sub-button.clicked,
+.cta-button.clicked {
+    transform: scale(0.95);
+    transition: transform 0.2s ease;
+}
+
+@media (max-width: 768px) {
+    .main h1 {
+        font-size: 2rem;
+    }
+
+    .main p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+/* Fade-in base style */
+
+
+/* Initially hidden for fade effect */
+.main, .about, .main-services, .services, .blog, .events, .team-intro, .team-members, .contact {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Sticky header shadow effect */
+header.sticky {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Button click animation */
+.sub-button.clicked,
+.cta-button.clicked {
+  transform: scale(0.95);
+  transition: transform 0.2s ease;
+}
+
+body * {
+    opacity: 1 !important;
+    transform: none !important;
+}
